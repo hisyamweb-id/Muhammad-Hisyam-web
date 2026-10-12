@@ -1,13 +1,76 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <title>Beranda</title>
-    <link rel="icon" type="image/x-icon" href="http://hisyamweb-id.github.io/Website-Terbaru-Muhammad-Hisyam-2026-/favicon.ico">
+ <!-- KODE STYLE ADA DI SINI YE -->
+    <style>
+        /* 1. Pengaturan Teks dan Latar Halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mengubah font agar lebih modern */
+            line-height: 1.6; /* Jarak antar baris teks agar nyaman dibaca */
+            color: #333333;
+        }
+
+        /* 2. Memperbagus Tabel Utama (Kontainer Web) */
+        table {
+            border-collapse: collapse;
+            border-radius: 15px; /* Membuat sudut website membulat */
+            overflow: hidden; /* Memastikan sudut background header/footer ikut membulat */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Menambahkan efek bayangan melayang yang elegan */
+            border: none !important; /* Menghilangkan garis batas (border="1") bawaan HTML */
+            background-color: #ffffff; /* Memperbaiki bgcolor="whitegrey" yang tidak valid di HTML */
+        }
+
+        /* Ngapus garis di setiap sel tabel */
+        td {
+            border: none !important; 
+        }
+
+        /* 3. Memperindah Judul Halaman dan Judul Berita */
+        h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4); /* Efek teks timbul pada header */
+            margin-bottom: 0;
+        }
+        h3 {
+            color: #006666; /* Warna tulisan Teal gelap */
+            border-bottom: 2px solid #eeeeee; /* Garis bawah halus pemisah judul berita */
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* 4. Memperindah Gambar Berita */
+        img {
+            border-radius: 8px; /* Sudut gambar membulat */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease; /* Animasi mulus */
+        }
+        img:hover {
+            transform: scale(1.03); /* Gambar sedikit membesar jika kursor diarahkan (hover) */
+        }
+
+        /* 5. Memperindah Semua Link (Tautan) */
+        a {
+            color: #008080; /* Warna Teal menyesuaikan tema */
+            text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background-color: #008080; /* Background link berubah saat disentuh kursor */
+            color: #ffffff; /* Tulisan link berubah putih */
+        }
+
+        /* 6. Memperindah daftar menu di Tautan Eksternal */
+        ol li {
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 
 <body bgcolor="darkgrey" background="assets/images/background.svg">
     <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
     <p>&nbsp;</p>
+    
     <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="whitegrey">
         <tr>
             <td colspan="2" align="center" bgcolor="teal" background="assets/images/jaring-teal.svg">
@@ -20,10 +83,10 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" bgcolor="white">
-                <a href="index.html">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
+            <td colspan="2" bgcolor="white" style="text-align: center; padding: 15px;">
+                <a href="./">Beranda</a> &nbsp;|&nbsp;
+                <a href="tentang-saya.html">Tentang Saya</a> &nbsp;|&nbsp;
+                <a href="sekolahku.html">Sekolahku</a> &nbsp;|&nbsp;
                 <a href="syair-lagu.html">Syair Lagu</a>
             </td>
         </tr>
