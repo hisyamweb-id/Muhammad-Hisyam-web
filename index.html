@@ -3,11 +3,80 @@
 <head>
     <title>Beranda</title>
     <link rel="icon" type="image/x-icon" href="http://hisyamweb-id.github.io/Website-Terbaru-Muhammad-Hisyam-2026-/favicon.ico">
+    
+    <!-- KODE STYLE ADA DI SINI YE -->
+    <style>
+        /* 1. Pengaturan Teks dan Latar Halaman */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mengubah font agar lebih modern */
+            line-height: 1.6; /* Jarak antar baris teks agar nyaman dibaca */
+            color: #333333;
+        }
+
+        /* 2. Memperbagus Tabel Utama (Kontainer Web) */
+        table {
+            border-collapse: collapse;
+            border-radius: 15px; /* Membuat sudut website membulat */
+            overflow: hidden; /* Memastikan sudut background header/footer ikut membulat */
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25); /* Menambahkan efek bayangan melayang yang elegan */
+            border: none !important; /* Menghilangkan garis batas (border="1") bawaan HTML */
+            background-color: #ffffff; /* Memperbaiki bgcolor="whitegrey" yang tidak valid di HTML */
+        }
+
+        /* Ngapus garis di setiap sel tabel */
+        td {
+            border: none !important; 
+        }
+
+        /* 3. Memperindah Judul Halaman dan Judul Berita */
+        h1 {
+            font-size: 36px;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.4); /* Efek teks timbul pada header */
+            margin-bottom: 0;
+        }
+        h3 {
+            color: #006666; /* Warna tulisan Teal gelap */
+            border-bottom: 2px solid #eeeeee; /* Garis bawah halus pemisah judul berita */
+            padding-bottom: 8px;
+            margin-top: 0;
+        }
+
+        /* 4. Memperindah Gambar Berita */
+        img {
+            border-radius: 8px; /* Sudut gambar membulat */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease; /* Animasi mulus */
+        }
+        img:hover {
+            transform: scale(1.03); /* Gambar sedikit membesar jika kursor diarahkan (hover) */
+        }
+
+        /* 5. Memperindah Semua Link (Tautan) */
+        a {
+            color: #008080; /* Warna Teal menyesuaikan tema */
+            text-decoration: none; /* Menghilangkan garis bawah bawaan link */
+            font-weight: 600;
+            padding: 4px 8px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        a:hover {
+            background-color: #008080; /* Background link berubah saat disentuh kursor */
+            color: #ffffff; /* Tulisan link berubah putih */
+        }
+
+        /* 6. Memperindah daftar menu di Tautan Eksternal */
+        ol li {
+            margin-bottom: 12px;
+        }
+    </style>
 </head>
 
 <body bgcolor="darkgrey" background="assets/images/background.svg">
     <!-- Halaman web tanpa CSS. Murni hanya memakai HTML -->
     <p>&nbsp;</p>
+    
     <table border="1" width="800px" cellpadding="12px" align="center" bgcolor="whitegrey">
         <tr>
             <td colspan="2" align="center" bgcolor="teal" background="assets/images/jaring-teal.svg">
@@ -20,40 +89,36 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2" bgcolor="white">
-                <a href="./">Beranda</a> |
-                <a href="tentang-saya.html">Tentang Saya</a> |
-                <a href="sekolahku.html">Sekolahku</a> |
+            <td colspan="2" bgcolor="white" style="text-align: center; padding: 15px;">
+                <a href="./">Beranda</a> &nbsp;|&nbsp;
+                <a href="tentang-saya.html">Tentang Saya</a> &nbsp;|&nbsp;
+                <a href="sekolahku.html">Sekolahku</a> &nbsp;|&nbsp;
                 <a href="syair-lagu.html">Syair Lagu</a>
             </td>
         </tr>
         <tr>
             <td width="75%">
                 <!-- Content utama -->
-
                 <h3>Beasiwa Terbaru</h3>
                 <img src="assets/images/Poto 1.png" alt="Beasiswa Terbaru" width="250">
                 <p align="right"><small><em>Jumat, 25 september 2026</em></small></p>
                 <p>Kesempatan untuk kuliah lagi di jenjang S2 atau S3 ditawarkan oleh Southeast Asian Regional Center for Graduate Study and Research in Agriculture (SEARCA). Beasiswa penuh ini ditawarkan kepada warga negara Indonesia untuk menempuh studi jenjang Magister atau Doktor di bidang pertanian dan bidang terkait lainnya untuk tahun akademik 2027-2028</p>
-                <p><a href="berita/berita-1.html">Selanjutnya</a></p>
-
-                <hr>
-
+                <p><a href="berita-beasiswa.html">Selanjutnya &raquo;</a></p>
+                
+                <br><hr style="border: 1px dashed #ccc;"><br>
+                
                 <h3>Berita warga baduy</h3>
-            <img src="assets/images/Poto 2.jpeg" alt="Berita Warga Baduy" width="250">
+                <img src="assets/images/Poto 2.jpeg" alt="Berita Warga Baduy" width="250">
                 <p align="right"><small><em>Rabu, 7 juni 2026</em></small></p>
-                <p>Sejumlah tokoh adat dan masyarakat Baduy mengunjungi Markas Kepolisian Daerah (Mapolda) Banten. Dalam kunjungan itu, mereka meminta agar pelaku pembegalan terhadap warga Baduy segera ditangkap.
-"Kami meminta segera ditangkap (pelakunya)," kata Kepala Desa Kanekes atau Jaro Pemerintah Baduy, Oom, kepada detikcom, Selasa (2/12/2025).
-
-Baca artikel detiknews, "Tokoh Adat ke Polda Banten, Minta Pelaku Begal terhadap Warga Baduy Ditangkap".</p>
-                <p><a href="berita/berita-2.html">Selanjutnya</a></p>
-
+                <p>Sejumlah tokoh adat dan masyarakat Baduy mengunjungi Markas Kepolisian Daerah (Mapolda) Banten. Dalam kunjungan itu, mereka meminta agar pelaku pembegalan terhadap warga Baduy segera ditangkap."Kami meminta segera ditangkap (pelakunya)," kata Kepala Desa Kanekes atau Jaro Pemerintah Baduy, Oom, kepada detikcom, Selasa (2/12/2025). Baca artikel detiknews, "Tokoh Adat ke Polda Banten, Minta Pelaku Begal terhadap Warga Baduy Ditangkap".</p>
+                <p><a href="berita-pembegalan.html">Selanjutnya &raquo;</a></p>
                 <!-- Akhir dari content utama -->
             </td>
-            <td width="25%" valign="top" bgcolor="white">
-                <p>Tautan eksternal</p>
-                <ol>
-                    <li><a href="https://hisyamweb-id.github.io/Website-Terbaru-Muhammad-Hisyam-2026-/#portfolio">Website Muhammad Hisyam</a></li>
+            
+            <td width="25%" valign="top" bgcolor="white" style="border-left: 1px solid #eee !important;">
+                <h4 style="color: #006666; border-bottom: 2px solid #eee; padding-bottom: 5px; margin-top: 0;">Tautan eksternal</h4>
+                <ol style="padding-left: 20px;">
+                    <li><a href="https://hisyamweb-id.github.io/Website-Terbaru-Muhammad-Hisyam-2026-/#portfolio">Website Hisyam</a></li>
                     <li><a href="https://github.com/hisyamweb">Github</a></li>
                     <li><a href="https://www.wikipedia.org">Wikipedia</a></li>
                     <li><a href="https://www.w3schools.com">W3Schools</a></li>
@@ -61,12 +126,11 @@ Baca artikel detiknews, "Tokoh Adat ke Polda Banten, Minta Pelaku Begal terhadap
             </td>
         </tr>
         <tr>
-            <td colspan="2" align="right" bgcolor="teal">
+            <td colspan="2" align="center" bgcolor="teal" style="padding: 15px;">
                 <font color="white"><small>&copy; Copyright Muhammad Hisyam, 2026.</small></font>
             </td>
         </tr>
     </table>
     <p>&nbsp;</p>
 </body>
-
 </html>
